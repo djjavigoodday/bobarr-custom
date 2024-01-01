@@ -36,15 +36,15 @@ mkdir -p packages/vpn
 
 (
   cd packages/transmission/config
-  curl -s https://raw.githubusercontent.com/iam4x/bobarr/master/packages/transmission/config/settings.json -o settings.json
+  curl -s https://raw.githubusercontent.com/djjavigoodday/bobarr-custom/master/packages/transmission/config/settings.json -o settings.json
 )
 
-curl -s https://raw.githubusercontent.com/iam4x/bobarr/master/.env -o .env
-curl -s https://raw.githubusercontent.com/iam4x/bobarr/master/docker-compose.yml -o docker-compose.yml
-curl -s https://raw.githubusercontent.com/iam4x/bobarr/master/docker-compose.vpn.yml -o docker-compose.vpn.yml
-curl -s https://raw.githubusercontent.com/iam4x/bobarr/master/docker-compose.wireguard.yml -o docker-compose.wireguard.yml
+curl -s https://raw.githubusercontent.com/djjavigoodday/bobarr-custom/master/.env -o .env
+curl -s https://raw.githubusercontent.com/djjavigoodday/bobarr-custom/master/docker-compose.yml -o docker-compose.yml
+curl -s https://raw.githubusercontent.com/djjavigoodday/bobarr-custom/master/docker-compose.vpn.yml -o docker-compose.vpn.yml
+curl -s https://raw.githubusercontent.com/djjavigoodday/bobarr-custom/master/docker-compose.wireguard.yml -o docker-compose.wireguard.yml
 
-curl -s https://raw.githubusercontent.com/iam4x/bobarr/master/scripts/bobarr.sh -o bobarr.sh
+curl -s https://raw.githubusercontent.com/djjavigoodday/bobarr-custom/master/scripts/bobarr.sh -o bobarr.sh
 chmod +x ./bobarr.sh
 
 echo "downloading docker images"
@@ -52,7 +52,7 @@ echo "downloading docker images"
 docker-compose pull
 
 echo ""
-echo "bobarr installation is now complete!"
+echo "bobarr-custom installation is now complete!"
 echo "update your configuration into [.env] and [docker-compose.yml] to link your library"
 
 echo ""
