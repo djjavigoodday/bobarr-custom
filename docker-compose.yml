@@ -74,7 +74,7 @@ services:
     env_file: .env
     restart: unless-stopped
     volumes:
-      - /opt/nfsmediashare/dowloads:/downloads
+      - ./library/downloads:/downloads
       - ./packages/transmission/config:/config
       - ./packages/transmission/watch:/watch
 
