@@ -55,7 +55,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./packages/jackett/config:/config
-      - /opt/nfsmediashare/downloads:/downloads
+      - ./packages/jackett/downloads:/downloads
     ports:
       - 9117:9117
 
