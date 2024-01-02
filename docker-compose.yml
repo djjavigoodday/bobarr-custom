@@ -87,5 +87,5 @@ services:
       - TZ=America/Chicago
     ports:
       - "9091:80"
-    command: -w "http://10.10.27.11:9091;/"
+    command: -w "http://transmission:9091;/"
     restart: unless-stopped
